@@ -1,0 +1,17 @@
+ul {
+  text-align: center;
+}
+.component {
+  padding: 20px;
+}
+.submit-form {
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+}
+.p-b-2 {
+  padding-bottom: 20px;
+}
+.p-t-2 {
+  padding-top: 20px;
+}

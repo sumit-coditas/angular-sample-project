@@ -1,0 +1,112 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+<div class="component" style="text-align:center">
+  <div>
+    <h1>{{ heading }}!</h1>
+  </div>
+  <div class="project-details component">
+    <ibm-accordion>
+      <ibm-accordion-item title="Section 1 title" (selected)="selected($event)"
+        >Lorem ipsum dolor sit amet, \ consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore \ et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation \ ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</ibm-accordion-item
+      >
+      <ibm-accordion-item title="Section 2 title" (selected)="selected($event)"
+        >Lorem ipsum dolor sit amet, \ consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore \ et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation \ ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</ibm-accordion-item
+      >
+      <ibm-accordion-item title="Section 3 title" (selected)="selected($event)"
+        >Lorem ipsum dolor sit amet, \ consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore \ et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation \ ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</ibm-accordion-item
+      >
+      <ibm-accordion-item title="Section 4 title" (selected)="selected($event)"
+        >Lorem ipsum dolor sit amet, \ consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore \ et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation \ ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</ibm-accordion-item
+      >
+    </ibm-accordion>
+  </div>
+  <div class="submit-form">
+    <div class="p-b-2">
+      <h2>{{ subHeading }}</h2>
+      <div class="form">
+        <div class="p-b-2">
+          <ibm-label
+            [helperText]="helperText"
+            [invalid]="invalid"
+            [invalidText]="invalidText"
+          >
+            First Name
+            <input
+              ibmText
+              [invalid]="invalid"
+              [disabled]="disabled"
+              [theme]="theme"
+              [placeholder]="placeholder"
+              [autocomplete]="autocomplete"
+            />
+          </ibm-label>
+        </div>
+        <div class="p-b-2">
+          <ibm-label
+            [helperText]="helperText"
+            [invalid]="invalid"
+            [invalidText]="invalidText"
+          >
+            Last Name
+            <input
+              ibmText
+              [invalid]="invalid"
+              [disabled]="disabled"
+              [theme]="theme"
+              [placeholder]="placeholder"
+              [autocomplete]="autocomplete"
+            />
+          </ibm-label>
+        </div>
+        <div class="p-b-2">
+          <ibm-label
+            [helperText]="helperText"
+            [invalid]="invalid"
+            [invalidText]="invalidText"
+          >
+            Email
+            <input
+              ibmText
+              [invalid]="invalid"
+              [disabled]="disabled"
+              [theme]="theme"
+              [placeholder]="placeholder"
+              [autocomplete]="autocomplete"
+            />
+          </ibm-label>
+        </div>
+        <div>
+            <ibm-label
+            [helperText]="helperText"
+            [invalid]="invalid"
+            [invalidText]="invalidText"
+          >
+            Upload file
+          <app-file-uploader
+				[title]="title"
+				[description]="description"
+				[buttonText]="buttonText"
+				[buttonType]="buttonType"
+				[accept]="accept"
+				[multiple]="multiple"
+				[size]="size">
+			</app-file-uploader>
+        </div>
+        <div>
+          <button [ibmButton]="ibmButton" [size]="10">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
